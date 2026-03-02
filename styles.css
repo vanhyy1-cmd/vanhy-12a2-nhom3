@@ -1,0 +1,201 @@
+body.library {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background-color: #f4faff;
+  color: #333;
+}
+
+/* MENU */
+.main-menu {
+  background-color: #0066cc;
+  text-align: center;
+  padding: 12px 0;
+}
+
+.main-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.main-menu li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+.main-menu a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+.main-menu a:hover {
+  color: #ffcc33;
+}
+
+/* --- Banner có ảnh nền --- */
+.banner {
+  position: relative;
+  background-image: url("img/doantruong.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  text-align: center;
+  padding: 100px 10%;
+  border-bottom: 5px solid #ffcc33;
+  overflow: hidden;
+}
+
+.banner::after {
+  /* Lớp phủ giúp chữ nổi bật trên ảnh */
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.banner h1, 
+.banner p {
+  position: relative;
+  z-index: 1;
+}
+
+.banner h1 {
+  font-size: 44px;
+  margin-bottom: 10px;
+}
+
+.banner p {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.banner h1 {
+  font-size: 44px;
+  margin-bottom: 10px;
+}
+
+.banner p {
+  font-size: 20px;
+  margin: 0;
+}
+
+/* SLOGAN */
+.slogan {
+  text-align: center;
+  font-style: italic;
+  font-size: 18px;
+  color: #00509e;
+  margin-top: 25px;
+}
+
+/* GIỚI THIỆU */
+.intro {
+  text-align: center;
+  font-size: 18px;
+  padding: 25px 10%;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* CARD CONTAINER */
+.card-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 40px 10%;
+}
+
+/* CARD STYLE */
+.card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  width: 320px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.2);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.4s;
+}
+
+.card:hover img {
+  transform: scale(1.05);
+}
+
+.card-content {
+  padding: 20px;
+  text-align: center;
+}
+
+.card-content h3 {
+  color: #0066cc;
+  margin-bottom: 10px;
+}
+
+.card-content p {
+  font-size: 15px;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #0066cc;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #ff9900;
+}
+.gallery {
+  display: flex;
+  flex-wrap: wrap; /* tự xuống dòng nếu tràn */
+  justify-content: center; /* căn giữa hàng ảnh */
+  gap: 15px; /* khoảng cách giữa các ảnh */
+}
+
+.gallery img {
+  width: 250px; /* điều chỉnh kích thước ảnh */
+  height: 180px;
+  object-fit: cover; /* cắt ảnh gọn, không méo */
+  border-radius: 8px;
+}
+
+/* Áp dụng riêng cho trang Dự án và Câu chuyện học sinh */
+.library .content-section img {
+  width: 25%;          /* thu nhỏ còn 1/4 kích thước ảnh gốc */
+  height: auto;        /* giữ đúng tỉ lệ ảnh */
+  border-radius: 10px; /* bo tròn góc ảnh */
+  object-fit: cover;   /* đảm bảo ảnh không bị méo */
+}
+
+/* FOOTER */
+footer {
+  background-color: #004080;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
+}
+
+.footer-info p {
+  margin: 5px 0;
+}
